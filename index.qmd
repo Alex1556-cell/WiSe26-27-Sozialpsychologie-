@@ -1,0 +1,34 @@
+---
+title: "Sozialpsychologie WiSe26/27"
+subtitle: "Kollaborative Folien mit Quarto"
+author: "Seminargruppe"
+---
+
+## Erste Folie
+
+Das ist die Startfolie für eure gemeinsame Präsentation.
+
+- Thema ergänzen
+- Inhalte verteilen
+- Folien gemeinsam erweitern
+
+---
+
+## Zweite Folie (2 Spalten)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Linke Spalte:**
+
+- Punkt A
+- Punkt B
+:::
+
+::: {.column width="50%"}
+**Rechte Spalte:**
+
+Hier könnt ihr z. B. ein Bild oder eine Grafik ergänzen.
+:::
+
+::::
