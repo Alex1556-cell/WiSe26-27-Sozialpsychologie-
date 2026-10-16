@@ -1,0 +1,23 @@
+---
+title: "Smoke Test"
+format:
+  revealjs:
+    theme: [simple, custom.scss]
+    slide-number: true
+    center: false
+    margin: 0.05
+    width: 1100
+    height: 750
+---
+
+## Mermaid Test
+
+```{mermaid}
+%%{init: {"themeVariables": {"fontSize": "22px"}, "flowchart": {"curve": "linear", "nodeSpacing": 30, "rankSpacing": 45}}}%%
+flowchart LR
+  A["Bogus-Test<br/>58 Items"] --> B["Selbsteinschaetzung<br/>Perzentil 0-100"]
+  B --> C["4 Wetten<br/>je 1 $"]
+  C --> D["Wechselpunkt<br/>plus/minus 5 pp"]
+```
+
+Text danach.

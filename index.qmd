@@ -1,34 +1,878 @@
 ---
-title: "Sozialpsychologie WiSe26/27"
-subtitle: "Kollaborative Folien mit Quarto"
-author: "Seminargruppe"
+title: "Do people really believe they are above average?"
+subtitle: "Williams & Gilovich (2008) · Journal of Experimental Social Psychology, 44(4), 1121–1128"
+author:
+  - "Referent:innen: [Namen eintragen]"
+  - "Vertiefungsseminar „Soziales Urteilen und Entscheiden“ · LMU München · Sitzung: [Datum eintragen]"
+footer: "Williams & Gilovich (2008) · Vertiefungsseminar SEU · LMU München"
+format:
+  revealjs:
+    theme: [simple, custom.scss]
+    slide-number: true
+    chalkboard: true
+    progress: true
+    transition: slide
+    center: false
+    margin: 0.05
+    width: 1100
+    height: 750
+    hash: true
 ---
 
-## Erste Folie
+## In 29 Minuten: fünf Abschnitte
 
-Das ist die Startfolie für eure gemeinsame Präsentation.
+<div class="karten">
+<div class="karte">
+<div class="karte__nr">1</div>
+<div class="karte__titel">Einleitung &amp; Theorie</div>
+<div class="karte__zeit">5 min</div>
+</div>
+<div class="karte">
+<div class="karte__nr">2</div>
+<div class="karte__titel">Frage &amp; Hypothesen</div>
+<div class="karte__zeit">2,5 min</div>
+</div>
+<div class="karte">
+<div class="karte__nr">3</div>
+<div class="karte__titel">Methodik &amp; Design</div>
+<div class="karte__zeit">8 min</div>
+</div>
+<div class="karte">
+<div class="karte__nr">4</div>
+<div class="karte__titel">Ergebnisse</div>
+<div class="karte__zeit">7 min</div>
+</div>
+<div class="karte">
+<div class="karte__nr">5</div>
+<div class="karte__titel">Diskussion &amp; Ausblick</div>
+<div class="karte__zeit">5 min</div>
+</div>
+</div>
 
-- Thema ergänzen
-- Inhalte verteilen
-- Folien gemeinsam erweitern
+<div class="merksatz">
+27,5 Minuten Inhalt + 1,5 Minuten Rahmen (Titel, Wegweiser, Quellen, Fragen) = <strong>ca. 29 Minuten</strong>. Vorgabe des Seminars: höchstens 30 Minuten.
+</div>
 
----
+::: notes
+**Redezeit: 0:30**
 
-## Zweite Folie (2 Spalten)
+Kernbotschaft: Wir beantworten eine fast 30 Jahre offene Frage – in fünf Blöcken.
 
-:::: {.columns}
+Ablauf:
+- Auf die fünf Karten zeigen und nur die Zeit pro Block nennen. Das gibt dem Publikum eine Landkarte.
+- Erwähnen, dass die farbigen Zwischenfolien nur Übergänge sind und keine eigene Redezeit haben.
 
-::: {.column width="50%"}
-**Linke Spalte:**
-
-- Punkt A
-- Punkt B
+Mögliche Rückfrage: Warum nur eine Studie? – Weil das Seminar die eigenständige Aufbereitung einer einzelnen Studie verlangt.
 :::
 
-::: {.column width="50%"}
-**Rechte Spalte:**
+# 1 | Einleitung & theoretischer Hintergrund {background-color="#123a5e"}
 
-Hier könnt ihr z. B. ein Bild oder eine Grafik ergänzen.
+## Im Mittel schätzen sich Menschen überdurchschnittlich ein
+
+<p>Gefragt wird nach dem <strong>eigenen Perzentil</strong>: „Ich übertreffe … Prozent meiner Mitstudierenden.“</p>
+
+:::: {.mitspalte}
+
+<div>
+<div class="bars">
+<div class="bar-row"><span class="bar-row__lab">Statistisch korrekt</span><div class="bar"><div class="bar__fill bar__fill--hoch" style="width:50%"></div></div><span class="bar-row__val">50</span></div>
+<div class="bar-row"><span class="bar-row__lab">Typische Angaben</span><div class="bar"><div class="bar__fill" style="width:62%"></div></div><span class="bar-row__val">≈ 62</span></div>
+<div class="bars__fuss"><span></span><span><span>0</span><span>50</span><span>100</span></span><span></span></div>
+</div>
+</div>
+
+::: {.anmerkung}
+„Ich fahre besser Auto als der Durchschnittsfahrer.“ – Es können aber nicht fast alle überdurchschnittlich sein.
 :::
 
 ::::
+
+<div class="merksatz">
+Korrekt wären <strong>50</strong> – typisch sind <strong>60 bis 65</strong> Perzentile.
+</div>
+
+::: notes
+**Redezeit: 1:15**
+
+Kernbotschaft: Der Above-Average-Effekt ist empirisch extrem robust, aber logisch unmöglich.
+
+Ablauf:
+- Das Balkendiagramm zeigen statt vorlesen: 50 wäre korrekt, typisch sind 60 bis 65. Kurz auf die gestrichelte Linie bei 50 hinweisen.
+- Die „≈ 62“ ausdrücklich als Literaturbefund kennzeichnen, nicht als Zahl dieser Studie.
+
+Zahlen zum Vorlesen: korrekt = 50. Perzentil; typische Angaben 60 bis 65.
+
+Mögliche Rückfrage: Ist das nicht einfach Höflichkeit gegenüber dem Fragebogen? – Genau diese Frage ist der Kern der Stunde.
+:::
+
+## Dieselben Fragebogenzahlen, zwei Erklärungen
+
+<p>Zwei Erklärungen sind denkbar:</p>
+
+<div class="vs">
+<div class="seite seite--a">
+<div class="seite__kopf">Nur Selbstdarstellung</div>
+<ul>
+<li>Die Angabe ist eine <strong>freundliche Übertreibung</strong>.</li>
+<li>Gemeint ist sie <strong>nicht</strong>.</li>
+<li>Unter Verantwortung würde sie <strong>sinken</strong>.</li>
+</ul>
+</div>
+<div class="seite seite--b">
+<div class="seite__kopf">Echte Überzeugung</div>
+<ul>
+<li>Die Angabe ist <strong>überoptimistisch, aber aufrichtig</strong>.</li>
+<li>Die Person <strong>glaubt</strong> sie.</li>
+<li>Sie würde <strong>danach handeln</strong>.</li>
+</ul>
+</div>
+</div>
+
+<div class="merksatz">
+Auf dem Fragebogen sehen beide Erklärungen <strong>identisch</strong> aus. Unterscheidbar werden sie erst, wenn die Angabe <strong>Folgen hat</strong>.
+</div>
+
+::: notes
+**Redezeit: 1:30**
+
+Kernbotschaft: Beide Erklärungen erzeugen dieselbe Zahl auf dem Papier – deshalb braucht man ein Verhalten, keinen weiteren Fragebogen.
+
+Ablauf:
+- Bewusst die selbstsprechenden Namen verwenden („Nur Selbstdarstellung“ / „Echte Überzeugung“) statt Deutung 1 und 2.
+- Auf die Trennlinie zeigen: links grau, rechts blau. Die beiden Erklärungen dürfen nicht vermischt werden.
+- Beide Seiten haben absichtlich genau drei Punkte, damit sie gleichwertig wirken.
+
+Mögliche Rückfrage: Welche Erklärung ist wahrscheinlicher? – Vor der Studie unklar; beide hatten Argumente (nächste Folie).
+:::
+
+## Beide Erklärungen hatten vorher Argumente
+
+<div class="vs">
+<div class="seite seite--a">
+<div class="seite__kopf">Für „nur Selbstdarstellung“</div>
+<ul>
+<li>Steht eine Aufgabe <strong>bevor</strong>, sinkt das Selbstvertrauen.</li>
+<li><strong>Rechenschaft</strong> senkt die Selbsteinschätzung.</li>
+<li><strong>Hypothetische</strong> Aufgaben überschätzen stärker.</li>
+</ul>
+</div>
+<div class="seite seite--b">
+<div class="seite__kopf">Für „echte Überzeugung“</div>
+<ul>
+<li>Konfidenzurteile werden beim Wetten <strong>voll vertreten</strong>.</li>
+<li>Geprüft wurden aber nur <strong>Prognosen über andere</strong>.</li>
+<li>Die <strong>eigene</strong> Perzentil-Angabe blieb ungeprüft.</li>
+</ul>
+</div>
+</div>
+
+<div class="merksatz">
+Die Lücke war methodisch: Geprüft war nie die <strong>eigene</strong> Perzentil-Angabe.
+</div>
+
+::: notes
+**Redezeit: 0:45**
+
+Kernbotschaft: Die Lücke war methodisch, nicht theoretisch.
+
+Ablauf:
+- Pro Seite nur zwei Punkte aussprechen, den dritten als Beleg stehen lassen.
+- Der letzte Punkt rechts ist die Forschungslücke – er leitet direkt zur Prüfidee über.
+
+Mögliche Rückfrage: Was ist mit der Kalibrierungsforschung? – Sie zeigt genau den zweiten Punkt rechts: überoptimistisch, aber vertreten.
+:::
+
+## So prüft man, ob eine Angabe geglaubt wird
+
+<p>Beide Optionen bekommen <strong>dieselbe Gewinnchance</strong> – es gäbe also keinen Grund, eine zu bevorzugen.</p>
+
+<div class="vs">
+<div class="seite seite--a">
+<div class="seite__kopf">Option: Los mit 70 %</div>
+<ul>
+<li>70 von 100 Plättchen gewinnen.</li>
+<li>Chance: <strong>genau 70 %</strong>.</li>
+</ul>
+</div>
+<div class="seite seite--b">
+<div class="seite__kopf">Option: eigenes Urteil</div>
+<ul>
+<li>„Ich übertreffe 70 % der Mitstudierenden.“</li>
+<li>Chance laut Angabe: <strong>70 %</strong>.</li>
+</ul>
+</div>
+</div>
+
+<div class="merksatz">
+<strong>Indifferent</strong> heißt hier: <em>Mir ist egal, welche der beiden Optionen ich bekomme – beide sind gleich viel wert.</em> Wer so wählt, <strong>glaubt</strong> seiner Angabe.
+</div>
+
+::: notes
+**Redezeit: 1:15**
+
+Kernbotschaft: „Indifferent“ heißt nicht Gleichgültigkeit gegenüber Geld, sondern: beide Optionen sind gleich viel wert.
+
+Ablauf:
+- Das Wort „indifferent“ hier einführen – mit der Klammer-Erklärung, so wie sie auf der Folie steht.
+- Die Idee stammt aus der Entscheidungsforschung (Exchangeability, nach de Finetti). Die Autoren wenden sie erstmals auf Selbsturteile an.
+- Wichtig: Die Zahlen 70 % sind ein Beispiel zur Erklärung, nicht das Studienergebnis.
+
+Mögliche Rückfrage: Warum nicht einfach fragen, ob sie es glauben? – Selbstauskunft wäre wieder nur eine Angabe; gebraucht wird ein Verhalten mit Konsequenz.
+:::
+
+## Das Wettverhalten ist eindeutig interpretierbar
+
+<table class="gross">
+<thead>
+<tr><th>Beobachtung im Experiment</th><th>Bedeutung</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Los wird bevorzugt</strong></td><td>Angabe war beschönigt („nur Selbstdarstellung“)</td></tr>
+<tr><td><strong>Eigenes Urteil wird bevorzugt</strong></td><td>Angabe war zu vorsichtig</td></tr>
+<tr><td><strong>Kein Unterschied</strong></td><td>Angabe ist eine <strong>echte Überzeugung</strong></td></tr>
+</tbody>
+</table>
+
+<div class="merksatz">
+Die Interpretation wird <strong>vorab</strong> festgelegt – so kann kein Ergebnis nachträglich umgedeutet werden.
+</div>
+
+::: notes
+**Redezeit: 0:45**
+
+Kernbotschaft: Die Tabelle ist die Brücke von Verhalten zu Interpretation – und sie war vor der Datenerhebung festgelegt.
+
+Ablauf:
+- Zeile für Zeile vorlesen. Das ist der methodische Kern der ganzen Studie.
+- Betonen: Es gibt nur drei mögliche Muster, und jedes hat genau eine Bedeutung.
+
+Mögliche Rückfrage: Was wäre ein alternatives Muster gewesen? – Z. B. Wechsel schon bei −5 % in beide Richtungen; das wäre ein Hinweis auf generelles Ausweichen vor Verantwortung.
+:::
+
+# 2 | Zentrale Forschungsfrage & Hypothesen {background-color="#123a5e"}
+
+## Forschungsfrage und ihre Operationalisierung
+
+<div class="merksatz">
+Glauben Menschen ihre selbstwerterhöhenden Einschätzungen – oder geben sie sie bewusst beschönigt ab?
+</div>
+
+<table class="gross">
+<thead>
+<tr><th>Beobachtung</th><th>Schluss</th></tr>
+</thead>
+<tbody>
+<tr><td>Wette auf das <strong>Los</strong></td><td>Angabe war beschönigt – das Los hat die objektiv bessere Chance</td></tr>
+<tr><td>Wette auf <strong>sich selbst</strong></td><td>Angabe war zu vorsichtig</td></tr>
+<tr><td><strong>Indifferenz</strong>, Wechsel bei ±1 %</td><td>Angabe ist eine <strong>echte Überzeugung</strong></td></tr>
+</tbody>
+</table>
+
+<div class="merksatz">
+Gemessen wird nicht die <em>Höhe</em> der Konfidenz, sondern ob die Angabe als Wahrscheinlichkeitsurteil <strong>funktioniert</strong>.
+</div>
+
+::: notes
+**Redezeit: 1:30**
+
+Kernbotschaft: Aus einer abstrakten Frage wird eine messbare Entscheidung.
+
+Ablauf:
+- Erst die Forschungsfrage vorlesen (blaue Box), dann zur Tabelle übergehen: Das ist die Operationalisierung.
+- Klarstellen: Die Wette misst nicht, wie sicher sich jemand fühlt, sondern ob die Angabe als Chance behandelbar ist.
+- Die Randnotiz rechts bewusst nennen – sie verhindert die häufigste Fehlinterpretation.
+
+Mögliche Rückfrage: Warum reicht es nicht, die Perzentile zu korrelieren? – Korrelationen können Wunschdenken und Überzeugung nicht trennen.
+:::
+
+## Die beiden Hypothesen schließen einander aus
+
+<div class="flow flow--gross">
+<div class="flow__box flow__box--frage">Beide Optionen haben dieselbe Gewinnchance – was passiert?</div>
+<div class="flow__line"></div>
+<div class="flow__split">
+<div class="flow__zweig">
+<div class="flow__cond">Ich bleibe indifferent</div>
+<div class="flow__box flow__box--h1"><strong>H1 · Echte Überzeugung</strong><br>Die Angaben werden geglaubt</div>
+</div>
+<div class="flow__zweig">
+<div class="flow__cond">Ich weiche auf das Los aus</div>
+<div class="flow__box flow__box--h2"><strong>H2 · Nur Selbstdarstellung</strong><br>Die Angaben waren beschönigt</div>
+</div>
+</div>
+<div class="flow__line"></div>
+<div class="flow__box flow__box--res">Die Daten können nur <strong>eine</strong> der beiden stützen</div>
+</div>
+
+::: notes
+**Redezeit: 1:00**
+
+Kernbotschaft: Es gibt nur zwei mögliche Ausgänge – und sie widersprechen sich direkt.
+
+Ablauf:
+- Am Diagramm entlanggehen: erst die blaue Entscheidungsfrage, dann die beiden Äste, dann unten das gelbe Fazit.
+- Betonen: Es gibt kein „beides ein bisschen“. Sobald das Los bevorzugt wird, ist H2 gestützt und H1 widerlegt.
+- Diese Folie ist der Prüfstein für die gesamte Ergebnis-Präsentation.
+
+Mögliche Rückfrage: Und wenn die Personen zufällig wählen? – Dann entsteht Indifferenz aus Rauschen; deshalb ist der zweite Test (Wechselpunkt) wichtig.
+:::
+
+# 3 | Methodik & Versuchsdesign {background-color="#123a5e"}
+
+## Der Ablauf: Test → Urteil → Wette → Wechselpunkt
+
+:::: {.mitspalte .mitspalte--eng}
+
+<div>
+<div class="flow flow--breit flow--lang">
+<div class="flow__box">1 · Erfundener Persönlichkeitstest<br><span class="flow__cond">58 Ja/Nein-Items</span></div>
+<div class="flow__line"></div>
+<div class="flow__box">2 · Selbsteinschätzung<br><span class="flow__cond">Perzentil zu 4 Eigenschaften</span></div>
+<div class="flow__line"></div>
+<div class="flow__box">3 · Vier Wetten, je 1 Dollar<br><span class="flow__cond">eigenes Urteil oder Los</span></div>
+<div class="flow__line"></div>
+<div class="flow__box">4 · Wechselpunkt<br><span class="flow__cond">Los-Chance um 1–5 Punkte</span></div>
+</div>
+</div>
+
+::: {.anmerkung}
+Aus dem Test entsteht ein Urteil – und dieses Urteil wird in Verhalten übersetzt.
+:::
+
+::::
+
+::: notes
+**Redezeit: 1:30**
+
+Kernbotschaft: Vier aufeinander aufbauende Schritte – der Test liefert nur die Bühne, gemessen wird im dritten und vierten Schritt.
+
+Ablauf:
+- Das Diagramm von oben nach unten durchgehen und jeden Schritt in einem Satz erklären.
+- Randnotiz rechts betonen: ohne Schritt 1 gäbe es keine glaubwürdige Grundlage für Schritt 2.
+- Ankündigen, dass die Folien danach jeden Schritt einzeln zeigen.
+
+Wichtig für das Verständnis: Gewettet wird nicht auf das Testergebnis an sich, sondern darauf, ob die eigene Angabe zutrifft.
+:::
+
+## Stichprobe: 49 Studierende, 196 Wetten
+
+:::: {.mitspalte .mitspalte--eng}
+
+<table class="gross">
+<thead>
+<tr><th>Merkmal</th><th>Angabe</th></tr>
+</thead>
+<tbody>
+<tr><td>Stichprobe</td><td><strong>N = 49</strong></td></tr>
+<tr><td>Population</td><td>Undergraduates der Cornell University</td></tr>
+<tr><td>Rekrutierung</td><td>Psychologie-Kurse, Teilnahme für Extra-Credit</td></tr>
+<tr><td>Anreiz</td><td>Gewinnchance zwischen 0 und 4 Dollar</td></tr>
+<tr><td>Setting</td><td>Einzeltestung, keine Gruppe</td></tr>
+</tbody>
+</table>
+
+::: {.anmerkung}
+Verglichen wird mit <strong>anderen Cornell-Studierenden</strong> – also mit der Population, aus der die Stichprobe stammt. Nur so ist der Erwartungswert von 50 Perzentilen begründbar.
+:::
+
+::::
+
+::: notes
+**Redezeit: 0:45**
+
+Kernbotschaft: Kleine, aber für den Zweck ausreichende Stichprobe mit monetärem Anreiz.
+
+Ablauf:
+- Nur die drei wichtigsten Zeilen nennen: N = 49, Cornell-Undergraduates, Einzeltestung.
+- Die Randnotiz ist methodisch entscheidend: Die Vergleichsgruppe ist genau die eigene Population.
+
+Zahlen zum Vorlesen: N = 49; 4 Wetten pro Person; zusammen 196 Wetten; Gewinnchance 0 bis 4 Dollar.
+
+Mögliche Rückfrage: Ist N = 49 nicht zu klein? – Für die Wettmaße reichten die 196 Beobachtungen für aussagekräftige Tests.
+:::
+
+## Was ist der „Bogus-Test“?
+
+<div class="vs">
+<div class="seite seite--a">
+<div class="seite__kopf">Was die Teilnehmenden erlebten</div>
+<ul>
+<li><strong>58 Ja/Nein-Aussagen</strong></li>
+<li>Beispiel: „You often do jobs in a hurry.“</li>
+<li>Wirkte wie ein <strong>echtes</strong> Persönlichkeitsinventar.</li>
+</ul>
+</div>
+<div class="seite seite--b">
+<div class="seite__kopf">Was dahinter steckt</div>
+<ul>
+<li><strong>Keine Auswertung</strong> – nie ausgewertet.</li>
+<li><strong>Kein Vergleich</strong> – die Person bleibt anonym.</li>
+<li><strong>Kein Ergebnis</strong> – niemand erfährt sein Abschneiden.</li>
+</ul>
+</div>
+</div>
+
+<div class="merksatz">
+Sinn: Der Test liefert nur die <strong>scheinbare Grundlage</strong> für die Rang-Angabe.
+</div>
+
+::: notes
+**Redezeit: 1:45**
+
+Kernbotschaft: Der Test misst nichts – er ist die Bühne, auf der die Rang-Angabe glaubwürdig wird.
+
+Ablauf:
+- Zuerst links: Was war das für ein Test? Betonen, dass es ein normal wirkender Fragebogen war, kein Trick-Item.
+- Dann rechts: Der Trick liegt nicht in den Items, sondern darin, dass es keine Auswertung und kein Ergebnis gibt.
+- Abschluss mit der blauen Box: Das ist der Sinn dieses Abschnitts.
+
+Wichtig: Nicht sagen „die Teilnehmenden wurden getäuscht“ ohne Zweck – die Täuschung dient dazu, eine echte Grundlage für die Rang-Angabe zu schaffen.
+
+Mögliche Rückfrage: Wussten sie, dass es keine Auswertung gibt? – Nein, das wurde erst im Debriefing aufgelöst.
+:::
+## Die Erhebung: 58 Items, dann vier Perzentile
+
+<p>Danach schätzten alle ihr <strong>eigenes Perzentil</strong> zu vier Eigenschaften ein – relativ zu anderen Cornell-Studierenden.</p>
+
+<table class="gross">
+<thead>
+<tr><th>Eigenschaft</th><th>Intelligenz</th><th>Kreativität</th><th>Reife</th><th>Positivität</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Abfrage</strong></td><td>Perzentil 0–100</td><td>Perzentil 0–100</td><td>Perzentil 0–100</td><td>Perzentil 0–100</td></tr>
+</tbody>
+</table>
+
+<div class="merksatz">
+Genau diese vier Eigenschaften sind <strong>bekannt anfällig</strong> für den Above-Average-Effekt – er kann hier also sichtbar werden, wenn es ihn gibt.
+</div>
+
+::: notes
+**Redezeit: 1:00**
+
+Kernbotschaft: Aus dem Test wird eine Zahl – das eigene Perzentil zu vier Eigenschaften.
+
+Ablauf:
+- Die vier Eigenschaften nennen und betonen, dass sie bewusst ausgewählt wurden, weil sie anfällig für Überschätzung sind.
+- Warum ein Perzentil? Weil es direkt in eine Gewinnwahrscheinlichkeit übersetzbar ist – das ist die Brücke zur nächsten Folie.
+
+Mögliche Rückfrage: Warum nicht viele Eigenschaften? – Vier gut belegte Eigenschaften reichten, um den Effekt und seine Konsequenzen zu prüfen.
+:::
+## Die Wette: zwei Optionen mit gleicher Chance
+
+<div class="vs">
+<div class="seite seite--a">
+<div class="seite__kopf">A · Wette auf den eigenen Rang</div>
+<ul>
+<li>Gewinn, wenn ich besser abschneide als eine <strong>zugeloste</strong> andere Person.</li>
+<li>Beide Seiten bleiben <strong>anonym</strong>.</li>
+</ul>
+</div>
+<div class="seite seite--b">
+<div class="seite__kopf">B · Wette auf die Urne</div>
+<ul>
+<li>Gefäß mit <strong>100 nummerierten Plättchen</strong>.</li>
+<li>Gewinn, wenn die Zahl <strong>≤ mein Perzentil</strong> ist.</li>
+</ul>
+</div>
+</div>
+
+<div class="bars">
+<div class="bar-row"><span class="bar-row__lab">Option A</span><div class="bar"><div class="bar__fill bar__fill--hoch" style="width:60%"></div></div><span class="bar-row__val">60 %</span></div>
+<div class="bar-row"><span class="bar-row__lab">Option B</span><div class="bar"><div class="bar__fill" style="width:60%"></div></div><span class="bar-row__val">60 %</span></div>
+</div>
+
+<div class="merksatz">
+Vier Wetten pro Person, je 1 Dollar.
+</div>
+
+::: notes
+**Redezeit: 1:30**
+
+Kernbotschaft: Die Urne ist der objektive Maßstab – sie hat genau die Gewinnchance, die die Person sich selbst zuschreibt.
+
+Ablauf:
+- Erst links erklären: Wette auf den eigenen Rang gegen eine zugeloste, anonyme Person.
+- Dann rechts: Die Urne bekommt exakt die eigene Prozentzahl als Gewinnchance – das ist das Kernstück des Designs.
+- Auf die beiden gleich langen Balken zeigen: 60 % ist 60 %. Wer die eigene Angabe glaubt, hat keinen Grund zu wechseln.
+
+Zahlen zum Vorlesen: 100 Plättchen; Gewinn bei Nummer ≤ eigenes Perzentil; 4 Wetten pro Person, je 1 Dollar Gewinnchance.
+
+Mögliche Rückfrage: Woher weiß man, dass die zugeloste Person nicht besser ist? – Man weiß es nicht, und genau deshalb ist es eine echte Wette.
+:::
+## Der Wechselpunkt: ±1 bis ±5 Prozentpunkte
+
+<p>Anschließend wurde die Los-Chance schrittweise verschoben – und nach dem Wechsel gefragt.</p>
+
+<div class="chips"><span class="chip">+1 pp</span><span class="chip">+2 pp</span><span class="chip">+3 pp</span><span class="chip">+4 pp</span><span class="chip">+5 pp</span><span class="chip chip--frage">Wechsel?</span></div>
+
+- Auch die <strong>fünf Gegenrichtungen</strong> wurden vorgelegt – als Prüfung, ob die Anweisung verstanden wurde.
+- Sonst wurde die <strong>nötige Änderung offen</strong> erfragt.
+
+<div class="merksatz">
+Wer seine Angabe <strong>wie ein Los</strong> behandelt, kippt schon bei <strong>einem Prozentpunkt</strong>.
+</div>
+
+::: notes
+**Redezeit: 1:15**
+
+Kernbotschaft: Der zweite Test ist feiner als der erste – er misst, wie stark die Person an ihrer Angabe hängt.
+
+Ablauf:
+- Die Chips als Stufen zeigen: erst +1, dann +2 … bis +5 Prozentpunkte.
+- Erklären, warum die „falschen“ Richtungen abgefragt wurden: Sie zeigen, ob die Aufgabe verstanden wurde. Es hat niemand in die falsche Richtung gewechselt.
+- Den Unterschied der beiden Tests betonen: Test 1 sagt, WOFÜR sich jemand entscheidet; Test 2 sagt, wie STARK die Bindung ist.
+
+Mögliche Rückfrage: Was ist ein „Prozentpunkt“? – Die absolute Änderung einer Prozentangabe: von 60 % auf 61 % ist ein Prozentpunkt.
+:::
+## Was tatsächlich gemessen wird
+
+<table class="gross">
+<thead>
+<tr><th>Konstrukt</th><th>Messung im Experiment</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Selbstwerterhöhung</strong></td><td>Mittleres Perzentil, Test gegen 50</td></tr>
+<tr><td><strong>Überzeugtheit</strong></td><td>Wetten auf Urteil vs. Urne</td></tr>
+<tr><td><strong>Bindung an die Angabe</strong></td><td>Nötige Änderung der Los-Chance</td></tr>
+<tr><td><strong>Verständnis</strong></td><td>Wechsel in die „falsche“ Richtung</td></tr>
+</tbody>
+</table>
+
+<div class="merksatz">
+<strong>Kontrollvariablen gibt es nicht</strong> – die Kontrolle entsteht über das Design: Die gematchte Los-Chance ist der interne Maßstab jeder einzelnen Wette.
+</div>
+
+::: notes
+**Redezeit: 1:00**
+
+Kernbotschaft: Vier Maße – und die Kontrolle kommt aus dem Design, nicht aus Kovariaten.
+
+Ablauf:
+- Die vier Zeilen kurz durchgehen; nur die letzten beiden brauchen Erklärung.
+- Die blaue Box bewusst betonen: Es gibt keine Kontrollvariablen im klassischen Sinn. Die Kontrolle ist die gematchte Wahrscheinlichkeit selbst.
+
+Mögliche Rückfrage: Warum keine Kovariaten wie Geschlecht oder Alter? – Weil der Vergleich innerhalb der Person stattfindet: beide Optionen haben dieselbe Chance.
+:::
+# 4 | Ergebnisse {background-color="#123a5e"}
+
+## Alle vier Eigenschaften liegen über dem 50. Perzentil
+
+<div class="bars">
+<div class="bar-row"><span class="bar-row__lab">Komposit (alle 4)</span><div class="bar"><div class="bar__fill bar__fill--hoch" style="width:61%"></div></div><span class="bar-row__val">60,96</span></div>
+<div class="bars__fuss"><span></span><span><span>0</span><span>50</span><span>100</span></span><span></span></div>
+</div>
+
+<table>
+<thead>
+<tr><th>Eigenschaft</th><th><em>M</em></th><th><em>SD</em></th><th><em>t</em>(48)</th><th><em>p</em></th><th><em>d</em></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Komposit</strong></td><td><strong>60,96</strong></td><td>13,33</td><td><strong>5,76</strong></td><td>&lt; .001</td><td>0,82</td></tr>
+<tr><td>Intelligenz</td><td>55,51</td><td>16,75</td><td>2,30</td><td>&lt; .05</td><td>0,33</td></tr>
+<tr><td>Kreativität</td><td>56,22</td><td>18,94</td><td>2,30</td><td>&lt; .05</td><td>0,33</td></tr>
+<tr><td>Reife</td><td>67,86</td><td>15,44</td><td>8,09</td><td>&lt; .001</td><td>1,16</td></tr>
+<tr><td>Positivität</td><td>64,24</td><td>21,11</td><td>4,73</td><td>&lt; .001</td><td>0,67</td></tr>
+</tbody>
+</table>
+
+<div class="merksatz">
+Die Voraussetzung ist erfüllt: Alle Werte liegen signifikant über 50 – am stärksten bei <strong>Reife</strong> (<em>d</em> = 1,16).
+</div>
+
+::: notes
+**Redezeit: 1:30**
+
+Kernbotschaft: Zuerst der Nachweis, dass überhaupt selbstwerterhöht wird – sonst wäre die Hauptfrage sinnlos.
+
+Ablauf:
+- Den Balken für das Komposit zeigen: 60,96 statt 50.
+- Die Tabelle zügig durchgehen: alle vier t-Tests werden signifikant, Cohen’s d zwischen 0,33 und 1,16.
+- Reife auffällig: der stärkste Effekt. Kurz erwähnen, dass Reife weniger objektiv messbar ist als Intelligenz.
+
+Zahlen zum Vorlesen: Komposit M = 60,96, SD = 13,33, t(48) = 5,76, p < .001, d = 0,82.
+
+Mögliche Rückfrage: Sind die Effekte für Intelligenz nicht sehr klein? – Ja, d = 0,33 ist klein, aber bei N = 49 signifikant. Das ist ein typisches Muster beim Above-Average-Effekt.
+:::
+## Die Wetten: 101-mal der eigene Rang, 95-mal die Urne
+
+<div class="stack"><span class="stack__seg stack__seg--a" style="width:51.5%">101 · eigenes Urteil</span><span class="stack__seg stack__seg--b" style="width:48.5%">95 · Urne</span></div>
+
+- Kein Unterschied über alle 196 Wetten: <strong>χ²(1, <em>N</em> = 196) = 0,18</strong>, <em>ns</em>.
+- Auch nach Eigenschaft getrennt keine Bevorzugung der Urne: alle **χ² < 0,51**, <em>ns</em>.
+- Einzige Ausnahme: **Intelligenz** zeigt eine marginale Tendenz zur Urne, χ²(1, <em>N</em> = 49) = 3,45, <em>p</em> = .06, φ = .27.
+
+<div class="merksatz">
+Wären die Angaben beschönigt, müsste die Urne <strong>klar überwiegen</strong> – sie bietet objektiv die bessere Chance. Das ist sie nicht.
+</div>
+
+::: notes
+**Redezeit: 1:45**
+
+Kernbotschaft: Der erste Hauptbefund – kein Ausweichen auf das sichere Los.
+
+Ablauf:
+- Den gestapelten Balken zeigen: fast genau hälftig, 101 zu 95.
+- Den χ²-Wert nennen: 0,18, nicht signifikant. Bei 196 Wetten wäre eine echte Präferenz deutlich sichtbar.
+- Die Intelligenz-Ausnahme offen ansprechen und einordnen: p = .06 ist marginal, also kein Beleg, sondern ein Hinweis für Folgestudien.
+
+Zahlen zum Vorlesen: 101 vs. 95; χ²(1, N = 196) = 0,18, ns; Intelligenz χ² = 3,45, p = .06, φ = .27.
+
+Mögliche Rückfrage: Ist p = .06 für Intelligenz nicht doch ein Effekt? – Es ist ein Grenzfall. Ein einzelner marginaler Befund bei vier Tests ist nicht belastbar.
+:::
+## Ein Prozentpunkt genügt: 14,7 % wechseln
+
+<div class="bars">
+<div class="bar-row"><span class="bar-row__lab">+1 Punkt</span><div class="bar"><div class="bar__fill" style="width:14.7%"></div></div><span class="bar-row__val">14,7 %</span></div>
+<div class="bar-row"><span class="bar-row__lab">+5 Punkte</span><div class="bar"><div class="bar__fill" style="width:60.4%"></div></div><span class="bar-row__val">60,4 %</span></div>
+<div class="bar-row"><span class="bar-row__lab">−1 Punkt</span><div class="bar"><div class="bar__fill" style="width:14.8%"></div></div><span class="bar-row__val">14,8 %</span></div>
+<div class="bar-row"><span class="bar-row__lab">−5 Punkte</span><div class="bar"><div class="bar__fill" style="width:60%"></div></div><span class="bar-row__val">60,0 %</span></div>
+<div class="bars__fuss"><span></span><span><span>0 %</span><span>Anteil, der wechseln würde</span><span>100 %</span></span><span></span></div>
+</div>
+
+- <strong>77 Wetten</strong> blieben selbst bei 5 Punkten unverändert – im Median waren **10 Punkte** nötig.
+
+<div class="merksatz">
+Die mittlere nötige Änderung weicht <strong>nicht von 0</strong> ab: *M* = −1,38; *t*(195) = −1,41; *ns*.
+</div>
+
+::: notes
+**Redezeit: 1:45**
+
+Kernbotschaft: Der zweite Hauptbefund – die Bindung an die eigene Angabe ist schwach, so wie bei einem echten Los.
+
+Ablauf:
+- Die vier Balken zeigen: bei ±1 Prozentpunkt wechseln schon rund 15 %, bei ±5 Prozentpunkten rund 60 %.
+- Das symmetrische Muster betonen: +1 und −1 sind fast identisch (14,7 % vs. 14,8 %) – die Richtung spielt keine Rolle.
+- Die 77 „harten“ Wetten erklären: hier wurde zuerst offen gefragt, dann im Mittel 3,38 Punkte genannt (M = −3,38, t(76) = −1,40, ns).
+
+Zahlen zum Vorlesen: +1 pp → 14,7 %; +5 pp → 60,4 %; −1 pp → 14,8 %; −5 pp → 60,0 %; Median 10 pp.
+
+Mögliche Rückfrage: Warum sind es nicht 100 % bei 5 Punkten? – Weil ein Los mit 5 Punkten mehr eben nur 5 Punkte besser ist; die Wette auf sich selbst bleibt attraktiv.
+:::
+## Alle drei Vorhersagen bestätigt
+
+<table class="gross">
+<thead>
+<tr><th>Vorhersage</th><th>Befund</th><th>✓</th></tr>
+</thead>
+<tbody>
+<tr><td>Above-Average-Effekt vorhanden</td><td>Komposit <em>M</em> = 60,96; alle vier Eigenschaften über 50</td><td>✓</td></tr>
+<tr><td>Indifferenz statt Ausweichen</td><td>101 zu 95; χ²(1, <em>N</em> = 196) = 0,18, <em>ns</em></td><td>✓</td></tr>
+<tr><td>Kleine Änderungen genügen</td><td>+1 pp → 14,7 % und +5 pp → 60,4 % wechseln</td><td>✓</td></tr>
+</tbody>
+</table>
+
+<div class="merksatz">
+Die Angaben verhalten sich wie <strong>echte Wahrscheinlichkeitsurteile</strong>: Sie werden nicht nur gesagt, sondern auch <strong>gelebt</strong>.
+</div>
+
+::: notes
+**Redezeit: 1:00**
+
+Kernbotschaft: Zwischenfazit – alle drei Vorhersagen aus dem Design sind eingetroffen.
+
+Ablauf:
+- Die drei Zeilen nacheinander nennen und jeweils auf die Folie verweisen, auf der der Befund gezeigt wurde.
+- Das Fazit in einem Satz: Die Angaben sind nicht nur Worte auf einem Fragebogen.
+
+Mögliche Rückfrage: Kann man aus diesen drei Befunden schon Kausalität ableiten? – Nein. Es ist ein Experiment mit Zufallszuordnung zur Wettoption, aber die Aussage betrifft den Glauben an die eigene Angabe.
+:::
+
+# 5 | Diskussion & Ausblick {background-color="#123a5e"}
+
+## Interpretation: Die Angaben werden geglaubt
+
+<div class="vs">
+<div class="seite seite--a">
+<div class="seite__kopf">Nur Selbstdarstellung</div>
+<ul>
+<li>Beschönigte, nicht gemeinte Angaben müssten zur <strong>Urne</strong> führen.</li>
+<li>Gefunden: kein solches Ausweichen.</li>
+<li>→ <strong>nicht gestützt</strong></li>
+</ul>
+</div>
+<div class="seite seite--b">
+<div class="seite__kopf">Echte Überzeugung</div>
+<ul>
+<li>Geglaubte Angaben müssten zu <strong>Indifferenz</strong> führen und bei 1 Punkt kippen.</li>
+<li>Gefunden: genau dieses Muster.</li>
+<li>→ <strong>gestützt</strong></li>
+</ul>
+</div>
+</div>
+
+<div class="merksatz">
+Damit sprechen die Befunde dafür, dass der Above-Average-Effekt <strong>„echt“</strong> ist – und nicht bloß ein Produkt der Erhebungsmethode.
+</div>
+
+::: notes
+**Redezeit: 1:30**
+
+Kernbotschaft: Aus den beiden Tests folgt eine klare Entscheidung zwischen den konkurrierenden Erklärungen.
+
+Ablauf:
+- Erst links: Was hätte man finden müssen, wenn die Angaben nur Selbstdarstellung wären? Antwort: eine klare Präferenz für die Urne. Sie fehlt.
+- Dann rechts: Was passt zur ernst gemeinten Überzeugung? Indifferenz plus Kippen bei einem Prozentpunkt. Genau das war zu sehen.
+- Das ist der Kernbefund der Studie – langsam und deutlich sagen.
+
+Mögliche Rückfrage: Kann nicht auch Gleichgültigkeit gegenüber den 1 Dollar die Indifferenz erklären? – Nur zum Teil; gerade deshalb ist der Wechselpunkt-Test wichtig: Er zeigt, dass schon kleine Änderungen wirken.
+:::
+## Selbstdarstellung ist ausgeschlossen
+
+<div class="kpis">
+<div class="kpi"><span class="kpi__n">22 / 49</span><span class="kpi__l">wählten 3-mal die eine, 1-mal die andere Option</span></div>
+<div class="kpi"><span class="kpi__n">4 / 49</span><span class="kpi__l">wählten viermal denselben Typ</span></div>
+</div>
+
+- Wer <strong>konsequent wirken</strong> wollte, müsste einseitig wetten – die Verteilung ist aber fast ausgeglichen (101 zu 95).
+- Auch <strong>innerhalb</strong> der Personen gibt es kein einheitliches Muster.
+
+<div class="merksatz">
+Ein Selbstdarstellungs-Effekt hätte eine <strong>einseitige</strong> Wettverteilung erzeugt – genau die fehlt.
+</div>
+
+::: notes
+**Redezeit: 1:15**
+
+Kernbotschaft: Die zweite Alternativerklärung – reine Selbstdarstellung – passt nicht zu den Daten.
+
+Ablauf:
+- Erst die Sorge nennen: Vielleicht wetten die Personen nur so, wie man „es tun sollte“.
+- Dann die Zahlen: 22 von 49 wählten drei Wetten des einen und eine des anderen Typs; nur 4 von 49 blieben konsequent bei einem Typ.
+- Fazit: Kein einseitiges Muster – also keine Selbstdarstellung.
+
+Zahlen zum Vorlesen: 22 von 49 gemischt; 4 von 49 konsequent; 101 zu 95.
+
+Mögliche Rückfrage: Reicht das als Ausschluss? – Es ist ein starkes Argument, aber kein endgültiger Beweis; deshalb sprechen die Autoren von Befunden, die Selbstdarstellung weniger plausibel machen.
+:::
+
+## Was die Studie nicht zeigen kann
+
+<table class="gross">
+<thead>
+<tr><th>Grenze</th><th>Warum das wichtig ist</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Stichprobe</strong></td><td>N = 49, Psychologie-Kurse, Extra-Credit</td></tr>
+<tr><td><strong>Niveau der Konfidenz</strong></td><td>Gezeigt wird, <em>dass</em> geglaubt wird – nicht, <em>wie</em> sicher</td></tr>
+<tr><td><strong>Einzelpersonen</strong></td><td>Der Effekt gilt für Gruppenmittelwerte</td></tr>
+<tr><td><strong>Laborsituation</strong></td><td>Je 1 Dollar, einmalige Erhebung</td></tr>
+</tbody>
+</table>
+
+<div class="merksatz">
+Ziel war nicht das <strong>Ausmaß</strong> der Konfidenz, sondern die Frage <strong>ob</strong>.
+</div>
+
+::: notes
+**Redezeit: 1:15**
+
+Kernbotschaft: Die Grenzen der Studie – vor allem die Trennung von „ob“ und „wie sehr“.
+
+Ablauf:
+- Die vier Zeilen kurz nennen.
+- Die zweite Zeile ausführlicher: Absolute Sicherheit und „wahrscheinlichster Wert“ lassen sich mit diesem Design nicht trennen – das ist eine bewusste Einschränkung.
+- Die letzte Zeile betonen: Es sind Laborwetten mit kleinen Beträgen.
+
+Mögliche Rückfrage: Warum hat man nicht direkt nach der Konfidenz gefragt? – Weil eine weitere Selbstauskunft wieder nur eine Angabe wäre. Das Verhalten war der Zweck.
+
+Mögliche Rückfrage: Würde das mit hohen Einsätzen auch gelten? – Offen; die Studie deutet an, dass auch darüber weiter geforscht werden müsste.
+:::
+## Theoretische Implikationen
+
+- **Der Effekt ist kein Messartefakt** – die Verzerrung ist real.
+- **Selbsturteile sind handlungsrelevant.** Wer seine Überschätzung glaubt, entscheidet danach.
+- **Kalibrierung und Selbstwerterhöhung rücken zusammen:** überoptimistisch, aber aufrichtig.
+- **Offen bleibt die Ursache** – etwa ein egozentrischer Substitutionsfehler.
+
+<div class="merksatz">
+Praktisch heißt das: Überschätzung lässt sich nicht wegreden – sie braucht <strong>objektive Rückmeldung</strong>.
+</div>
+
+::: notes
+**Redezeit: 1:30**
+
+Kernbotschaft: Drei Konsequenzen für die Forschung – plus die offene Frage nach der Ursache.
+
+Ablauf:
+- Der erste Punkt ist der wichtigste: Die Studie stützt die Position, dass der Effekt real ist.
+- Den zweiten Punkt mit einem Beispiel verbinden: Wer sich für kreativer hält, wählt andere Aufgaben.
+- Den letzten Punkt als Einladung für die Diskussion formulieren: Woher kommen die Schätzungen?
+
+Mögliche Rückfrage: Welche Erklärung ist die beste? – Offen. Der Substitutionsfehler (Kruger, 1999; Moore & Small, 2007) ist eine plausible, aber nicht abschließend geprüfte Erklärung.
+:::
+
+## Take-Home-Message
+
+<div class="kpis">
+<div class="kpi"><span class="kpi__n">60,96</span><span class="kpi__l">mittleres Selbst-Perzentil statt 50</span></div>
+<div class="kpi"><span class="kpi__n">101 zu 95</span><span class="kpi__l">kein Ausweichen auf das sichere Los</span></div>
+</div>
+
+- Menschen sagen nicht nur, dass sie überdurchschnittlich sind – sie **handeln** auch so.
+- Schon **ein Prozentpunkt** bringt rund 15 % zum Umdenken.
+- Die Selbstwerterhöhung ist damit **keine Höflichkeit gegenüber dem Fragebogen**.
+
+<div class="merksatz">
+Ja: Die Angaben sind überoptimistisch, aber <strong>aufrichtig</strong>.
+</div>
+
+::: notes
+**Redezeit: 1:15**
+
+Kernbotschaft: Die Antwort auf die Titelfrage – drei Sätze, dann die Diskussion einleiten.
+
+Ablauf:
+- Die beiden Kennzahlen zeigen: Überschätzung ja, aber keine Ausweichbewegung.
+- Den Kernsatz langsam sagen: Überoptimistisch, aber aufrichtig.
+- Direkt zur Diskussion überleiten.
+
+Mögliche Rückfrage: Was folgt daraus für die Praxis? – Überschätzung ist nicht durch Ermahnung zu beheben; nötig sind echte Rückmeldungen und objektive Kriterien.
+:::
+## Quellen
+
+Williams, E. F., & Gilovich, T. (2008). *Do people really believe they are above average?* Journal of Experimental Social Psychology, 44(4), 1121–1128. doi:10.1016/j.jesp.2008.01.002
+
+**Zitierte Arbeiten** (vollständige Angaben in der Primärquelle, S. 1126–1128)
+
+- Dunning et al. (1989, 1990, 2004) · Gilovich, Kerr, & Medvec (1993) · Kruger (1999) · Kruger & Dunning (1999)
+- Moore & Small (2007) · Sedikides (1993, 2002) · Shepperd et al. (1996)
+
+::: notes
+**Redezeit: 0:20**
+
+Kernbotschaft: kurz und sachlich auf die Primärquelle verweisen.
+
+Ablauf:
+- Nur die Primärquelle vorlesen, die Kurzbelege stehen lassen.
+- Erwähnen, dass sämtliche Zahlen aus dem Original stammen.
+:::
+
+## Fragen & Diskussion
+
+<p><strong>Mögliche Diskussionspunkte</strong></p>
+
+- Ist Überschätzung eher ein <strong>Motivationsphänomen</strong> oder ein <strong>Urteilsfehler</strong>?
+- Wie würde die Wette mit <strong>hohen Einsätzen</strong> oder in <strong>Gruppen</strong> ausgehen?
+- Welche Rolle spielt <strong>Rückmeldung</strong> – verändert Wissen über die eigene Leistung die Perzentil-Angabe?
+
+<div class="merksatz">
+Vielen Dank – wir freuen uns auf Ihre Fragen.
+</div>
+
+::: notes
+**Redezeit: 0:40**
+
+Kernbotschaft: Diskussion eröffnen und beim Publikum andocken.
+
+Ablauf:
+- Die drei Diskussionspunkte nennen und den ersten an eine Person richten.
+- Für Nachfragen bereit sein – die Fragen aus den vorherigen Notizen decken die häufigsten ab.
+
+Häufige Fragen und kurze Antworten:
+- „Warum nur die vier Eigenschaften?“ – Sie sind gut belegt anfällig für Überschätzung; das Design ist auf die Wettlogik zugeschnitten.
+- „Ist das nicht einfach Rationalität?“ – Wer denkt, dass er besser ist, für den sind beide Optionen gleich gut. Genau das ist der Punkt.
+- „Wurde getäuscht?“ – Ja, es gab ein Debriefing; ohne erfundenen Test gäbe es keine glaubwürdige Grundlage.
+- „Warum kleine Beträge?“ – Um Verlustaversion zu begrenzen und die Entscheidung möglichst rein zu halten.
+:::

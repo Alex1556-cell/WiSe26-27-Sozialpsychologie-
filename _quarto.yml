@@ -1,11 +1,5 @@
 project:
   type: website
 
-format:
-  revealjs:
-    theme: sky
-    slide-number: true
-    transition: slide
-
 execute:
   freeze: auto
